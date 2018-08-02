@@ -1,0 +1,26 @@
+{
+  "name": "fetch-rest-client",
+  "version": "0.0.1",
+  "description": "A low weight simple rest client using fetch implementations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusmonte/fetch-rest-client.git"
+  },
+  "keywords": [
+    "rest",
+    "fetch",
+    "npm",
+    "client",
+    "package"
+  ],
+  "author": "Matheus Monte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matheusmonte/fetch-rest-client/issues"
+  },
+  "homepage": "https://github.com/matheusmonte/fetch-rest-client#readme"
+}
