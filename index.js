@@ -1,5 +1,8 @@
 "use strict"
-import {getMethod, postMethod, putMethod, deleteMethod} from './Methods';
+var getMethod = require('./Methods/get');
+var postMethod = require('./Methods/post');
+var putMethod = require('./Methods/put');
+var deleteMethod = require('./Methods/delete');
 
 module.exports = function getURL(url, headers = {}){
   return getMethod(url);
