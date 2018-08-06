@@ -1,12 +1,18 @@
 "use strict"
+import {getMethod, postMethod, putMethod, deleteMethod} from './Methods';
 
-module.exports = function get(url, callbacks, headers = {}){
-  return new Promise((resolve, reject) => {
-    if(url === undefined){
-      reject('Definy a URL to execute get method');
-      return callback('Not Valid URL'); 
-    }else{
-      //will performe get method and send data as callback return
-    }
-  });
+module.exports = function getURL(url, headers = {}){
+  return getMethod(url);
+}
+
+module.exports = function postURL(url, body, headers={}){
+  return postMethod(url, body);
+}
+
+module.exports = function putURL(url, body, headers={}){
+  return putMethod(url, body);
+}
+
+module.exports = function deleteURL(url, body, headers={}){
+  return deleteMethod(url, body);
 }
