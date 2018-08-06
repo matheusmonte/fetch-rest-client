@@ -1,6 +1,6 @@
 {
   "name": "fetch-rest-client",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A low weight simple rest client using fetch implementations",
   "main": "index.js",
   "scripts": {
