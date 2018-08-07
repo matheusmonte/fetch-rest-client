@@ -1,11 +1,9 @@
 "use strict"
 
-module.exports = function getMethod(url) {
+module.exports = function getMethod(url, headers) {
   return new Promise((resolve, reject) => {
     fetch(url, {
-      headers: new Headers({
-        'Content-Type': 'application/json'
-      })
+      headers: new Headers(headers)
     }).then((response) => {
       return resolve(response.json());
     }).catch(error => {
