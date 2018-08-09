@@ -4,18 +4,21 @@ var postMethod = require('./Methods/post');
 var putMethod = require('./Methods/put');
 var deleteMethod = require('./Methods/delete');
 
-module.exports = function getURL(url, headers = {'Content-Type': 'application/json'}){
-  return getMethod(url, headers);
-}
+class FetchClient{
+  get(url, headers){
+    return getMethod(url, headers = {'Content-Type': 'application/json'});
+  }
 
-module.exports = function postURL(url, body, headers = {'Content-Type': 'application/json'}){
-  return postMethod(url, body, headers);
-}
+  post(url, body, headers = {'Content-Type': 'application/json'}){
+    return postMethod(url, body, headers);
+  }
 
-module.exports = function putURL(url, body, headers = {'Content-Type': 'application/json'}){
-  return putMethod(url, body, headers);
-}
+  put(url, body, headers = {'Content-Type': 'application/json'}){
+    return putMethod(url, body, headers);
+  }
 
-module.exports = function deleteURL(url, body, headers = {'Content-Type': 'application/json'}){
-  return deleteMethod(url, body, headers);
+  delete(url, body, headers = {'Content-Type': 'application/json'}){
+    return deleteMethod(url, body, headers);
+  }
 }
+export default FetchClient
