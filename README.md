@@ -60,7 +60,7 @@ but you can send your own object, just remenber to add 'Content-Type' param in y
 
 If you get some error or some suggestion to improve this package, please, open a issue on [GitHub](https://github.com/matheusmonte/fetch-rest-client/issues)  
 
-##Project RoadMap
+## Project RoadMap
 
 You can check the project roadMap on this [Board](https://github.com/matheusmonte/fetch-rest-client/projects/1)
 
