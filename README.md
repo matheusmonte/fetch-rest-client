@@ -22,7 +22,7 @@ import FetchClient from 'fetch-rest-client'
 Create a instance of FetchClient
 
 ```
-this.fetchClient = new FetchClient();
+fetchClient = new FetchClient();
 ```
 
 After this, you can just use the methods GET, POST, PUT, DELETE.
@@ -30,7 +30,7 @@ After this, you can just use the methods GET, POST, PUT, DELETE.
 GET Sample:
 
 ```
-this.fetchClient.get('your URL', {Headers Object are optionals}).then(response => {
+fetchClient.get('your URL', {Headers Object are optionals}).then(response => {
   //what you want
 });
 ```
@@ -39,7 +39,7 @@ POST, PUT and DELETE have the same params, just change 'post' method to 'put' or
 Sample: 
 
 ```
-this.fetchClient.post('your URL',{body object}, {Headers Object are optionals}).then(response => {
+fetchClient.post('your URL',{body object}, {Headers Object are optionals}).then(response => {
   //what you want
 });
 ```
